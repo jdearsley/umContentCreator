@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <AssemblyVersion>1.0.2</AssemblyVersion>
-        <Version>1.0.2</Version>
-        <InformationalVersion>1.0.2</InformationalVersion>
+        <AssemblyVersion>1.1.1</AssemblyVersion>
+        <Version>1.1.1</Version>
+        <InformationalVersion>1.1.1</InformationalVersion>
         <TargetFramework>net6.0</TargetFramework>
         <ContentTargetFolders>.</ContentTargetFolders>
-        <Title>umContentCreator.Core</Title>
-        <Product>umContentCreator.Core</Product>
-        <PackageId>umContentCreator.Core</PackageId>
+        <Title>CWContentCreator.Core</Title>
+        <Product>CWContentCreator.Core</Product>
+        <PackageId>CWContentCreator.Core</PackageId>
         <Company>$(Authors)</Company>
-        <Authors>OSKI solutions</Authors>
+        <Authors>OSKI solutions, Joe Dearsley</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -18,10 +18,12 @@
         <Description>This package contains the core logic of the umContentCreator package.</Description>
         <RepositoryUrl>https://github.com/Kirill19837/umContentCreator</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-		<PackageReleaseNotes>Add possibility to generate images.</PackageReleaseNotes>
+		<PackageReleaseNotes>Reworked to use Microsoft Open AI Package and Updated Image generation</PackageReleaseNotes>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.16" />
         <PackageReference Include="MarkdownSharp" Version="2.0.5" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="System.Net.Http" Version="4.3.4" />

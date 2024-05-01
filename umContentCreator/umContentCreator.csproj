@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-		<AssemblyVersion>1.0.3</AssemblyVersion>
-		<Version>1.0.3</Version>
-		<InformationalVersion>1.0.3</InformationalVersion>
+		<AssemblyVersion>1.0.4</AssemblyVersion>
+		<Version>1.0.4</Version>
+		<InformationalVersion>1.0.4</InformationalVersion>
 		<TargetFramework>net6.0</TargetFramework>
 		<ContentTargetFolders>.</ContentTargetFolders>
 		<Product>umContentCreator</Product>
@@ -27,6 +27,7 @@
 			3) Resolve the issue of text not being generated when a page has multiple supported languages.
 			4) Resolve the issue of text being appended twice when generating text on a Block Grid page.
 		</PackageReleaseNotes>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     </PropertyGroup>
 
 	<ItemGroup>

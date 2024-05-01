@@ -1,0 +1,25 @@
+﻿{
+        "dashboards": [
+                {
+                        "alias": "UmContentEditor",
+                        "view": "/App_Plugins/UmContentCreator/Views/umContentCreatorConfiguration.html",
+                        "sections": [
+                                "content"
+                        ]
+                }
+        ],
+  "javascript": [
+    "~/App_Plugins/UmContentCreator/Controllers/umContentCreatorSettings.controller.js",
+    "~/App_Plugins/UmContentCreator/Directives/uniqueId.directive.js",
+    "~/App_Plugins/UmContentCreator/Services/umPropertyContentCreator.service.js",
+    "~/App_Plugins/UmContentCreator/Services/umImageContentCreator.service.js",
+    "~/App_Plugins/UmContentCreator/Services/modal.service.js",
+    "~/App_Plugins/UmContentCreator/Decorators/umContentCreator.decorator.js",
+    "~/App_Plugins/UmContentCreator/Components/umContentCreator.component.js"
+  ],
+        "css": [
+                "~/App_Plugins/UmContentCreator/Styles/umContentCreator.css",
+                "~/App_Plugins/UmContentCreator/Styles/umContentCreatorModal.css",
+                "~/App_Plugins/UmContentCreator/Styles/umContentCreatorSettings.css"
+        ]
+}
